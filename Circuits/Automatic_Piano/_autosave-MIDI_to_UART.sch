@@ -1,0 +1,134 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DIN-5_180degree J?
+U 1 1 5E18DE72
+P 2450 3500
+F 0 "J?" H 2450 3225 50  0000 C CNN
+F 1 "DIN-5_180degree" H 2450 3134 50  0000 C CNN
+F 2 "" H 2450 3500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 2450 3500 50  0001 C CNN
+	1    2450 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3400 3400 3200
+Wire Wire Line
+	3400 3200 3500 3200
+$Comp
+L Isolator:PC817 U?
+U 1 1 5E1ACB9A
+P 3800 3100
+F 0 "U?" H 3800 3425 50  0000 C CNN
+F 1 "PC817" H 3800 3334 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3600 2900 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3800 3100 50  0001 L CNN
+	1    3800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3000 2050 3400
+Wire Wire Line
+	2050 3400 2150 3400
+Wire Wire Line
+	2050 3000 2350 3000
+$Comp
+L Device:R_Small R?
+U 1 1 5E1A338A
+P 2450 3000
+F 0 "R?" V 2254 3000 50  0000 C CNN
+F 1 "220R" V 2345 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2450 3000 50  0001 C CNN
+F 3 "~" H 2450 3000 50  0001 C CNN
+F 4 "0603" V 2550 3000 50  0000 C CNN "FootprintField"
+	1    2450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E1A5115
+P 3100 3200
+F 0 "D?" V 3000 3050 50  0000 L CNN
+F 1 "1N4148WS" V 3100 2750 50  0000 L CNN
+F 2 "" H 3100 3200 50  0001 C CNN
+F 3 "~" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 3000 3100 3000
+Wire Wire Line
+	2750 3400 3100 3400
+Wire Wire Line
+	3100 3350 3100 3400
+Connection ~ 3100 3400
+Wire Wire Line
+	3100 3400 3400 3400
+Wire Wire Line
+	3100 3050 3100 3000
+Connection ~ 3100 3000
+Wire Wire Line
+	3100 3000 3500 3000
+$Comp
+L power:+5V #PWR?
+U 1 1 5E1AFA14
+P 4350 2600
+F 0 "#PWR?" H 4350 2450 50  0001 C CNN
+F 1 "+5V" H 4365 2773 50  0000 C CNN
+F 2 "" H 4350 2600 50  0001 C CNN
+F 3 "" H 4350 2600 50  0001 C CNN
+	1    4350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E1B355A
+P 4350 2800
+F 0 "R?" V 4154 2800 50  0000 C CNN
+F 1 "280R" V 4245 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 2800 50  0001 C CNN
+F 3 "~" H 4350 2800 50  0001 C CNN
+F 4 "0603" V 4450 2800 50  0000 C CNN "FootprintField"
+	1    4350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2600 4350 2700
+Wire Wire Line
+	4100 3000 4350 3000
+Wire Wire Line
+	4350 3000 4350 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5E1B988A
+P 4350 3300
+F 0 "#PWR?" H 4350 3050 50  0001 C CNN
+F 1 "GND" H 4355 3127 50  0000 C CNN
+F 2 "" H 4350 3300 50  0001 C CNN
+F 3 "" H 4350 3300 50  0001 C CNN
+	1    4350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3200 4350 3200
+Wire Wire Line
+	4350 3200 4350 3300
+Text HLabel 4500 3000 2    50   Input ~ 0
+MIDI_UART_IN
+Wire Wire Line
+	4350 3000 4500 3000
+Connection ~ 4350 3000
+$EndSCHEMATC
