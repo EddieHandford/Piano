@@ -81,21 +81,8 @@ Wire Wire Line
 	4000 3000 4250 3000
 Wire Wire Line
 	4250 3000 4250 2900
-$Comp
-L power:GND #PWR?
-U 1 1 5E1B988A
-P 4250 3400
-F 0 "#PWR?" H 4250 3150 50  0001 C CNN
-F 1 "GND" H 4255 3227 50  0000 C CNN
-F 2 "" H 4250 3400 50  0001 C CNN
-F 3 "" H 4250 3400 50  0001 C CNN
-	1    4250 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 3200 4250 3200
-Wire Wire Line
-	4250 3200 4250 3400
 Text HLabel 4600 2900 1    50   Input ~ 0
 MIDI_UART_IN
 Wire Wire Line
@@ -180,4 +167,17 @@ F 3 "" H 4900 2600 50  0001 C CNN
 	1    4900 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1B988A
+P 4250 3400
+F 0 "#PWR?" H 4250 3150 50  0001 C CNN
+F 1 "GND" H 4255 3227 50  0000 C CNN
+F 2 "" H 4250 3400 50  0001 C CNN
+F 3 "" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3200 4250 3400
 $EndSCHEMATC
