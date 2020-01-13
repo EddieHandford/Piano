@@ -1,4 +1,134 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3000 3000 1500 1000
+U 5E18C714
+F0 "MIDI to UART" 50
+F1 "MIDI_to_UART.sch" 50
+F2 "MIDI_UART_IN" I R 4500 3300 50 
+F3 "MIDI_IN_4" I L 3000 3500 50 
+F4 "MIDI_IN_5" I L 3000 3800 50 
+F5 "MIDI_THRU_5" I L 3000 3200 50 
+$EndSheet
+$Sheet
+S 5000 3000 1500 1000
+U 5E18CB51
+F0 "Processor" 50
+F1 "Processor.sch" 50
+$EndSheet
+$Sheet
+S 5000 1500 1500 1000
+U 5E18D7E6
+F0 "UART to USB" 50
+F1 "UART_to_USB.sch" 50
+$EndSheet
+$Sheet
+S 7000 3000 1500 1000
+U 5E18D8EB
+F0 "CAN" 50
+F1 "CAN.sch" 50
+$EndSheet
+$Comp
+L Connector:DIN-5_180degree J?
+U 1 1 5E1CF2E9
+P 2000 3900
+AR Path="/5E18C714/5E1CF2E9" Ref="J?"  Part="1" 
+AR Path="/5E1CF2E9" Ref="J?"  Part="1" 
+F 0 "J?" H 2000 3625 50  0000 C CNN
+F 1 "DIN-5_180degree" H 2000 3534 50  0000 C CNN
+F 2 "" H 2000 3900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 2000 3900 50  0001 C CNN
+	1    2000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5_180degree J?
+U 1 1 5E1F1711
+P 2000 2850
+AR Path="/5E18C714/5E1F1711" Ref="J?"  Part="1" 
+AR Path="/5E1F1711" Ref="J?"  Part="1" 
+F 0 "J?" H 2000 2575 50  0000 C CNN
+F 1 "DIN-5_180degree" H 2000 2484 50  0000 C CNN
+F 2 "" H 2000 2850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 2000 2850 50  0001 C CNN
+	1    2000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E1F1717
+P 1700 2350
+AR Path="/5E18C714/5E1F1717" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F1717" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1700 2200 50  0001 C CNN
+F 1 "+5V" H 1715 2523 50  0000 C CNN
+F 2 "" H 1700 2350 50  0001 C CNN
+F 3 "" H 1700 2350 50  0001 C CNN
+	1    1700 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E1F171E
+P 1700 2550
+AR Path="/5E18C714/5E1F171E" Ref="R?"  Part="1" 
+AR Path="/5E1F171E" Ref="R?"  Part="1" 
+F 0 "R?" V 1504 2550 50  0000 C CNN
+F 1 "220R" V 1595 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 2550 50  0001 C CNN
+F 3 "~" H 1700 2550 50  0001 C CNN
+F 4 "0603" V 1800 2550 50  0000 C CNN "FootprintField"
+	1    1700 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2350 1700 2450
+Wire Wire Line
+	1700 2650 1700 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5E1F1726
+P 2250 2400
+AR Path="/5E18C714/5E1F1726" Ref="#PWR?"  Part="1" 
+AR Path="/5E1F1726" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2250 2150 50  0001 C CNN
+F 1 "GND" H 2255 2227 50  0000 C CNN
+F 2 "" H 2250 2400 50  0001 C CNN
+F 3 "" H 2250 2400 50  0001 C CNN
+	1    2250 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2350 2250 2400
+Wire Wire Line
+	2000 2550 2000 2350
+Wire Wire Line
+	2250 2350 2000 2350
+Wire Wire Line
+	1700 3800 1600 3800
+Wire Wire Line
+	1600 3800 1600 3500
+Wire Wire Line
+	1600 3500 3000 3500
+Wire Wire Line
+	2300 3800 3000 3800
+Wire Wire Line
+	2300 2750 2900 2750
+Wire Wire Line
+	2900 2750 2900 3200
+Wire Wire Line
+	2900 3200 3000 3200
 $EndSCHEMATC
